@@ -1,0 +1,161 @@
+@font-face {
+    font-family: 'queilab';
+    src: url('../font/Qeilab.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1, h2, h3, h4{
+    font-family: 'queilab', sans-serif !important;
+    font-size: 50px !important;
+    color: #4E4D4D !important;
+}
+
+h3{
+    font-size: 36px !important;
+    font-weight: 100 !important;
+}
+
+h4{
+    font-size: 26px !important;
+    font-weight: 100 !important;
+}
+
+p, small, li, a, span, label, input, button{
+    font-family: 'poppins', sans-serif !important;
+    line-height: 150% !important;
+    font-size: 16px !important;
+    font-weight: 300 !important;
+    color: #4E4D4D !important;
+}
+
+nav{
+    background-color: #000000B3;
+}
+
+.nav-link{
+    color: #FFFFFF !important;
+}
+
+.navbar-expand-xl .navbar-nav .nav-link{
+    padding: 0 2rem !important;
+}
+
+.banner{
+    padding: 0.5rem 1.5rem !important;
+    background-image: url(./../img/Banner.png);
+    height: 680px;
+}
+
+.blur{
+    background: rgba(255, 255, 255, 0.06);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+}
+
+.btn-primary{
+    background-color: #F5DBAE !important;
+    border-color: #F5DBAE !important;
+    color: #4E4D4D !important;
+    padding: 0.7rem 1rem !important;
+}
+
+.text-primary{
+    color: #FFB400 !important;
+}
+
+/**/
+.barbearia{
+    background-color: #292929;
+}
+
+.barbearia h2,
+.barbearia h3,
+.barbearia p,
+.barbearia small{
+    color: #FFFFFF !important;
+}
+
+.barbearia #gallery{
+    background-color: #4E4D4D;
+    margin-top: -85px;
+    padding-top: 85px;
+    height: 650px;
+    margin-bottom: 131px;
+}
+
+.filter{
+  display: none;
+}
+
+.show{
+  display: block;
+}
+
+.barbearia .services .nav-link:hover,
+.barbearia .services .nav-link.active{
+    border-bottom: 1px solid #FFB400;
+}
+
+.barbearia .services{
+    background-image: url(./../img/background_scissor.png);
+    background-position: top right;
+    background-repeat: no-repeat;
+}
+
+.barbearia .find-more{
+    background-image: url(./../img/background_logo.png);
+    background-position: left;
+    background-repeat: no-repeat;
+}
+
+.barbearia .course{
+    background-color: #4E4D4D;
+}
+
+.barbearia .border,
+.barbearia .border-end{
+    border-color: #4E4D4D !important;
+}
+
+
+
+/**/
+.esmalteria #gallery{
+    background-color: #F9E9CE;
+    margin-top: -65px;
+    padding-top: 65px;
+    height: 650px;
+    margin-bottom: 131px;
+}
+
+.esmalteria .services{
+    background-image: url(./../img/Background-services.png);
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
+.esmalteria .packages{
+    background-image: url(./../img/background_logo.png);
+    background-repeat: no-repeat;
+    background-position: 1260px 240px;
+    background-color: #F9E9CE;
+}
+
+/**/
+.contact{
+    background-image: url(./../img/Background-contact.png);
+    background-repeat: no-repeat;
+}
+
+.contact a{
+    text-decoration: none !important;
+}
+
+footer{
+    background-color: #4E4D4D;
+}
+
+footer p{
+    color: #F5DBAE !important;
+}
