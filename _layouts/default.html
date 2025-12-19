@@ -36,27 +36,33 @@ canonical: https://trust/index
 
     <header id="header" class="fixed-top">
       <nav class="navbar navbar-expand-xl" role="navigation">
-        <div class="offcanvas offcanvas-end" abindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-          <div class="offcanvas-header pb-0">
-            
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-          </div>
-          <div class="offcanvas-body justify-content-evenly align-items-center">
-            <ul class="nav navbar-nav align-items-center">
-              <li class="nav-item"><a class="nav-link" href="#">Início</a></li>
-              <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
-              <li class="nav-item"><a class="nav-link" href="#barbearia">Barbearia</a></li>
-              <li class="nav-item"><a class="nav-link p-0" href="/"><img src="assets/img/Banner_logo.png" width="150" alt="Logomarca Trust"></a></li>
-              <li class="nav-item"><a class="nav-link" href="#curso">Curso</a></li>
-              <li class="nav-item"><a class="nav-link" href="#esmalteria">Esmalteria</a></li>
-              <li class="nav-item"><a class="nav-link" href="#contatos">Contatos</a></li>
-            </ul>
-          </div>
-        </div>
+        <div class="container-fluid">
+          <a class="navbar-brand p-0 d-xl-none" href="#">
+            <img src="./assets/img/Banner_logo.png" alt="Impulse" height="40">
+          </a>
 
-        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-          <span class="navbar-toggler-icon text-color"><small class="d-none">menu</small></span>
-        </button>
+          <div class="offcanvas offcanvas-end bg-dark" abindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header pb-0 text-center">
+               <span class="h5 offcanvas-title" id="offcanvasNavbarLabel"><img src="./assets/img/Banner_logo.png" height="40" loading="lazy"></span>
+              <button type="button" class="btn-close bg-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body justify-content-evenly align-items-center mt-3 mt-sm-1">
+              <ul class="nav navbar-nav align-items-start align-items-xl-center">
+                <li class="nav-item"><a class="nav-link" href="#">Início</a></li>
+                <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+                <li class="nav-item"><a class="nav-link" href="#barbearia">Barbearia</a></li>
+                <li class="nav-item"><a class="nav-link p-0 d-none d-xl-block" href="/"><img src="assets/img/Banner_logo.png" width="150" alt="Logomarca Trust"></a></li>
+                <li class="nav-item"><a class="nav-link" href="#curso">Curso</a></li>
+                <li class="nav-item"><a class="nav-link" href="#esmalteria">Esmalteria</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contatos">Contatos</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <button class="navbar-toggler bg-white" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon"><small class="d-none">menu</small></span>
+          </button>
+        </div>
       </nav>
     </header>
 

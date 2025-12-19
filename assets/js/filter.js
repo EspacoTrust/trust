@@ -33,7 +33,7 @@ function w3RemoveClass(element, name) {
 }
 
 // Add active class to the current button (highlight it)
-if(document.getElementById('services')){
+if(document.getElementById('servicos')){
   var btnContainer = document.getElementById("buttons");
   var btns = btnContainer.getElementsByClassName("nav-link");
   for (var i = 0; i < btns.length; i++) {

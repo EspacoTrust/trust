@@ -44,7 +44,7 @@ nav{
 .banner{
     padding: 0.5rem 1.5rem !important;
     background-image: url(./../img/Banner.png);
-    height: 680px;
+    height: 100vh;
 }
 
 .blur{
@@ -64,7 +64,17 @@ nav{
     color: #FFB400 !important;
 }
 
-/**/
+.w-md-75{
+    width: 75% !important;
+}
+
+.tecnicas{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    text-align: center;
+}
+
+/* barbearia */
 .barbearia{
     background-color: #292929;
 }
@@ -76,7 +86,7 @@ nav{
     color: #FFFFFF !important;
 }
 
-.barbearia #gallery{
+.barbearia #galeria{
     background-color: #4E4D4D;
     margin-top: -85px;
     padding-top: 85px;
@@ -84,20 +94,12 @@ nav{
     margin-bottom: 131px;
 }
 
-.filter{
-  display: none;
-}
-
-.show{
-  display: block;
-}
-
-.barbearia .services .nav-link:hover,
-.barbearia .services .nav-link.active{
+.barbearia .servicos .nav-link:hover,
+.barbearia .servicos .nav-link.active{
     border-bottom: 1px solid #FFB400;
 }
 
-.barbearia .services{
+.barbearia .servicos{
     background-image: url(./../img/background_scissor.png);
     background-position: top right;
     background-repeat: no-repeat;
@@ -109,7 +111,7 @@ nav{
     background-repeat: no-repeat;
 }
 
-.barbearia .course{
+.barbearia .curso{
     background-color: #4E4D4D;
 }
 
@@ -118,10 +120,16 @@ nav{
     border-color: #4E4D4D !important;
 }
 
+.filter{
+  display: none;
+}
 
+.show{
+  display: block;
+}
 
-/**/
-.esmalteria #gallery{
+/* esmalteria */
+.esmalteria #galeria{
     background-color: #F9E9CE;
     margin-top: -65px;
     padding-top: 65px;
@@ -142,20 +150,67 @@ nav{
     background-color: #F9E9CE;
 }
 
-/**/
-.contact{
+/* Contatos */
+.contato{
     background-image: url(./../img/Background-contact.png);
     background-repeat: no-repeat;
 }
 
-.contact a{
+.contato a{
     text-decoration: none !important;
 }
 
+/* Footer */
 footer{
     background-color: #4E4D4D;
 }
 
 footer p{
     color: #F5DBAE !important;
+}
+
+/* Responsivo */
+@media (max-width: 1220px){
+    .barbearia #galeria,
+    .esmalteria #galeria{
+        height: auto;
+        margin-bottom: 0;
+    }
+
+}
+
+/* Tablet */
+@media (max-width: 992px) {
+    .tecnicas{
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        text-align: center;
+        margin-bottom: 3px;
+    }
+
+    .contato{
+        background-image: none;
+        background-color: #DCDBDB;
+    }
+
+    .tecnicas .w-75{
+        width: 100% !important;
+    }
+
+    .barbearia .sobre .w-100,
+    .esmalteria .w-100{
+        width: 50% !important;
+    }
+
+    .border-start-0{
+        border: 1px solid #dee2e6 !important;
+    }
+
+    .w-75{
+        width: 100% !important;
+    }
+
+    .border{
+        border-radius: 0.25rem !important;
+    }
 }
