@@ -5,12 +5,12 @@ title: Trust
 
 <section id="banner" class="banner p-5 d-flex align-items-center justify-content-center">
   <div class="text-center">
-    <img src="./assets/img/Banner_logo.png" alt="">
-    <p class="text-white">Confiança que transforma seu estilo.</p>
+    <img class="w-75" src="./assets/img/Banner_logo1.png" alt="">
+    <p class="text-white">Há mais de 5 anos construindo confiança através do cuidado.</p>
   </div>
 </section>
 
-<section id="sobre" class="container-xxl pt-5">
+<section id="sobre" class="container-xxl pt-5" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
   <div class="row align-items-center justify-content-between mb-5">
     <div class="col-md-6">
       <h2>Sobre nós</h2>
@@ -29,8 +29,8 @@ title: Trust
   </div>
 </section>
 
-<section id="barbearia" class="barbearia">
-  <section class="sobre">
+<section id="barbearia" class="barbearia barbearia-index">
+  <section class="sobre" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
     <div class="container-xxl pt-5">
       <div class="row align-items-center justify-content-between">
         <div class="col-md-6">
@@ -46,32 +46,32 @@ title: Trust
     </div>
   </section>
 
-  <section class="destaque">
+  <section class="destaque z-1" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
     <div class="container-xxl">
       <div class="tecnicas m-auto w-75">
         <div class="tecnica mb-2 me-2 me-sm-0">
-          <div class="border rounded-start text-center p-3 blur">
+          <div class="border rounded-start text-center p-3 blur h-100">
             <img src="./assets/img/Icon_hands.png" width="40" height="40" alt="Icone de aperto de mãos">
             <p class="mt-3 mb-0">Atendimento humanizado e Individualizado</p>
           </div>
         </div>
 
         <div class="tecnica mb-2">
-          <div class="border border-start-0 text-center p-3 blur">
+          <div class="border border-start-0 text-center p-3 blur h-100">
             <img src="./assets/img/Icon_product.png" width="40" height="40" alt="Icone de produto">
             <p class="mt-3 mb-0">Produtos selecionados e de alta qualidade</p>
           </div>
         </div>
 
         <div class="tecnica mb-2 me-2 me-sm-0">
-          <div class="border border-start-0 text-center p-3 blur">
+          <div class="border border-start-0 text-center p-3 blur h-100">
             <img src="./assets/img/Icon_scissor.png" width="40" height="40" alt="Icone de tesoura">
             <p class="mt-3 mb-0">Profissional experiente e atualizado</p>
           </div>
         </div>
 
         <div class="tecnica mb-2">
-          <div class="border border-start-0 rounded-end text-center p-3 p-3 blur">
+          <div class="border border-start-0 rounded-end text-center p-3 blur h-100">
             <img src="./assets/img/Icon_light.png" width="40" height="40" alt="Icone de lampada">
             <p class="mt-3 mb-0">Compromisso com pontualidade e excelência</p>
           </div>
@@ -95,19 +95,19 @@ title: Trust
     </div>
   </section>
 
-  <section id="servicos" class="servicos">
+  <section id="servicos" class="servicos" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
     <div class="container-xxl pt-5">
       <h3>Serviços</h3>
       <p>Uma seleção de serviços pensados para trazer conforto, estilo e precisão em cada detalhe.</p>
 
       <div class="row">
-        <div id="buttons" class="nav d-flex align-items-center justify-content-center">
-          <button class="nav-link text-start text-secondary" onclick="filterSelection('cut')">Corte</button>
+        <div id="buttons" class="nav d-flex align-items-center justify-content-center" data-aos="fade-up">
+          <button class="nav-link text-start text-secondary active" onclick="filterSelection('cut')">Corte</button>
           <button class="nav-link text-start text-secondary" onclick="filterSelection('beard')">Barba</button>
           <button class="nav-link text-start text-secondary" onclick="filterSelection('other')">Outros</button>
-          <button class="nav-link text-start text-secondary active" onclick="filterSelection('all')">Todos</button>
+          <button class="nav-link text-start text-secondary" onclick="filterSelection('all')">Todos</button>
         </div>
-        <div class="row row-cols-2 row-cols-md-4 g-2">
+        <div class="row row-cols-2 row-cols-md-4 g-2" data-aos="fade-up">
           <div class="col">
             <div class="py-4 px-3 text-center border rounded h-100 filter cut">
               <img src="./assets/img/Icon_scissor.png" width="32" height="32" loading="lazy" alt="">
@@ -226,39 +226,20 @@ title: Trust
     </div>
   </section>
 
-  <section id="curso" class="curso">
-    <div class="py-5 mt-5">
-      <div class="container-xxl row align-items-center justify-content-between">
-        <div class="col-md-6">
-          <h3>Curso</h3>
-          <p>A trajetória de um bom barbeiro começa com um bom mentor. Alexandre oferece curso individualizado, pensado para quem busca evolução real, prática guiada e atenção total.</p>
-          <p>Confira o vídeo abaixo para entender como funciona o curso e ver um pouco da metodologia na prática</p>
-          <!-- <a class="btn btn-primary align-items-center" href="curso.html">
-            <div class="d-flex align-items-center">
-              <img class="me-1" src="./assets/img/Icon_go.png" width="16" height="16" alt="Icone indicando que vai abrir nova aba">
-              Saber mais sobre o curso
-            </div>
-          </a> -->
-        </div>
-        <div class="col-md-4">
-          <img class="w-100" src="./assets/img/Video_foto.png" alt="">
-        </div>
-      </div>
-    </div>
-  </section>
+  {% include barbearia-curso.html %}
 
-  <!-- <section class="find-more text-center py-5">
+  <section class="find-more text-center py-5" data-aos="fade-up">
     <a class="btn btn-primary align-items-center" href="barbearia.html">
       <div class="d-flex align-items-center">
         <img class="me-1" src="./assets/img/Icon_go.png" width="16" height="16" alt="Icone indicando que vai abrir nova aba">
         Conhecer mais sobre o trabalho de Alexandre
       </div>
     </a>
-  </section> -->
+  </section>
 </section>
 
 <section id="esmalteria" class="esmalteria">
-  <section class="sobre">
+  <section class="sobre" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
     <div class="container-xxl pt-5">
       <div class="row align-items-center justify-content-between">
         <div class="col-md-6">
@@ -274,7 +255,7 @@ title: Trust
     </div>
   </section>
 
-  <section class="destaque">
+  <section class="destaque" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
     <div class="container-xxl">
       <div class="tecnicas m-auto w-75">
         <div class="tecnica mb-2 me-2 me-sm-0">
@@ -285,14 +266,14 @@ title: Trust
         </div>
 
         <div class="tecnica mb-2">
-          <div class="border border-start-0 text-center p-3 blur">
+          <div class="border border-start-0 text-center p-3 blur h-100">
             <img src="./assets/img/Icon_security.png" width="40" height="40" alt="Icone de escudo">
             <p class="mt-3 mb-0">Segurança e <br> Biossegurança</p>
           </div>
         </div>
 
         <div class="tecnica mb-2 me-2 me-sm-0">
-          <div class="border border-start-0 text-center p-3 blur">
+          <div class="border border-start-0 text-center p-3 blur h-100">
             <img src="./assets/img/Icon_product.png" width="40" height="40" alt="Icone de produto">
             <p class="mt-3 mb-0">Materiais de <br> Qualidade</p>
           </div>
@@ -323,189 +304,17 @@ title: Trust
     </div>
   </section>
 
-  <section class="servicos">
-    <div class="container-xxl pt-5">
-      <h3>Serviços</h3>
-      <p>Uma seleção de cuidados criada para realçar sua beleza, trazer conforto e garantir acabamento perfeito em cada detalhe.</p>
+  {% include esmalteria-servicos.html %}
+  {% include esmalteria-pacotes.html %}
 
-      <div class="row row-cols-1 row-cols-md-3 g-3">
-        <div class="col">
-          <div class="border rounded px-3 py-4 h-100 blur">
-            <div class="text-center">
-              <img src="./assets/img/Icon_traditional.png" width="32" height="32" alt="">
-              <p class="text-primary pt-2"><strong class="fw-bold">Manicure Tradicional</strong></p>
-            </div>
-            <ul>
-              <li>Corte e lixamento</li>
-              <li>Remoção de cutículas</li>
-              <li>Esmaltação tradicional</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="col">
-          <div class="border rounded px-3 py-4 h-100 blur">
-            <div class="text-center">
-              <img src="./assets/img/Icon_foot.png" width="32" height="32" alt="">
-              <p class="text-primary pt-2"><strong class="fw-bold">Pedicure</strong></p>
-            </div>
-            <ul>
-              <li>Cuidados completos dos pés</li>
-              <li>Remoção de cutículas</li>
-              <li>Lixamento e hidratação</li>
-              <li>Esmaltação tradicional</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="col">
-          <div class="border rounded px-3 py-4 h-100 blur">
-            <div class="text-center">
-              <img src="./assets/img/Icon_gel.png" width="32" height="32" alt="">
-              <p class="text-primary pt-2"><strong class="fw-bold">Esmaltação em Gel</strong></p>
-            </div>
-            <ul>
-              <li>Esmaltação de longa duração</li>
-              <li>Alta resistência e brilho</li>
-              <li>Secagem rápida na cabine UV/LED</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="col">
-          <div class="border rounded px-3 py-4 h-100 blur">
-            <div class="text-center">
-              <img src="./assets/img/Icon_gel.png" width="32" height="32" alt="">
-              <p class="text-primary pt-2"><strong class="fw-bold">Banho de Gel</strong></p>
-            </div>
-            <ul>
-              <li>Reforço sobre a unha natural</li>
-              <li>Ideal para unhas fracas ou quebradiças</li>
-              <li>Acabamento natural e resistente</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="col">
-          <div class="border rounded px-3 py-4 h-100 blur">
-            <div class="text-center">
-              <img src="./assets/img/Icon_gel.png" width="32" height="32" alt="">
-              <p class="text-primary pt-2"><strong class="fw-bold">Blindagem com poligel e realinhamento </strong></p>
-            </div>
-            <ul>
-              <li>Camada protetora para fortalecer a unha natural</li>
-              <li>Reduz quebras e descamações</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <div class="text-center pt-5">
-        <a class="btn btn-primary me-3" href="https://wa.me/554991233885?text=Ol%C3%A1%20Adriane%2C%20gostaria%20de%20saber%20se%20h%C3%A1%20hor%C3%A1rio%20dispon%C3%ADvel" target="_blank">
-            <div class="d-flex align-items-center">
-              <img class="me-1" src="./assets/img/Icon_whatsapp.png" width="16" height="16" alt="Logo Whatsapp">
-              Agendar meu horário
-            </div>
-          </a>
-      </div>
-    </div>
-  </section>
-
-  <section class="packages">
-    <div class="container-xxl py-5 mt-5">
-      <h3 class="text-center pt-3 pb-2">Pacotes mensais</h3>
-
-      <div class="row align-items-center justify-content-center gy-3">
-        <div class="col-md-3">
-          <div class="rounded bg-white p-4 me-2">
-            <h4 class="text-primary text-center"><strong>Pacote <br> Essencial</strong></h4>
-            <ul class="mt-4 mb-0">
-              <li>4 mãos de manicure tradicional no mês</li>
-              <li>1 pedicure no mês</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="col-md-3">
-          <div class="rounded bg-white p-4">
-            <h4 class="text-primary text-center"><strong>Pacote <br> Premium</strong></h4>
-            <ul class="mt-4 mb-0">
-              <li>4 mãos de manicure tradicional no mês</li>
-              <li>2 pedicure no mês</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <div class="text-center pt-4">
-        <a class="btn btn-primary me-3" href="https://wa.me/554991233885?text=Ol%C3%A1%20Adriane%2C%20gostaria%20de%20saber%20se%20h%C3%A1%20hor%C3%A1rio%20dispon%C3%ADvel" target="_blank">
-          <div class="d-flex align-items-center">
-            <img class="me-1" src="./assets/img/Icon_whatsapp.png" width="16" height="16" alt="Logo Whatsapp">
-            Conversar com Adriane
-          </div>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- <section class="text-center mt-5">
-    <a class="btn btn-primary">
+  <section class="text-center mt-5" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+    <a class="btn btn-primary" href="esmalteria.html">
       <div class="d-flex align-items-center">
         <img class="me-1" src="./assets/img/Icon_go.png" width="16" height="16" alt="Icone indicando que vai abrir nova aba">
         Conhecer mais sobre o trabalho de Adriane
       </div>
     </a>
-  </section> -->
+  </section>
 </section>
 
-<section id="contatos" class="contato mt-5">
-  <div class="container-xxl py-5">
-    <h2 class="text-center mb-4">Contatos</h2>
-
-    <div class="row align-items-center justify-content-between gy-3">
-      <div class="col-12 col-md-3">
-        <div class="border rounded bg-white py-4 px-3 h-100">
-          <h4 class="text-center">Esmalteria</h4>
-          <p class="text-center fw-bold text-primary">Adriane</p>
-
-          <div class="d-flex align-items-center justify-content-start mb-2">
-            <img class="me-2" src="./assets/img/Icon_whatsapp-2.png" width="32" height="32" alt="">
-            <a class="mb-0" href="https://wa.me/554991233885?text=Ol%C3%A1%20Adriane%2C%20gostaria%20de%20saber%20se%20h%C3%A1%20hor%C3%A1rio%20dispon%C3%ADvel" target="_blank">49 9 9123-3885</a>
-          </div>
-          <div class="d-flex align-items-center justify-content-start">
-            <img class="me-2" src="./assets/img/Icon_instagram.png" width="32" height="32" alt="">
-            <a class="mb-0" href="https://www.instagram.com/trust.esmalteria/" target="_blank">@trust.esmalteria</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-12 col-md-6">
-        <div class="border rounded bg-white py-4 px-3">
-          <h4 class="text-center">Endereço</h4>
-          <p class="mt-3">R. Tancredo Neves, 553 - Joaçaba, SC, 89600-000</p>
-          <iframe class="w-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3549.817911770262!2d-51.49867192455185!3d-27.162018776499483!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94e3fb33682de73f%3A0x2a5cfbee1167dac4!2sTrust%20Barbearia%20e%20Esmalteria!5e0!3m2!1spt-BR!2sbr!4v1765847263377!5m2!1spt-BR!2sbr" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-      </div>
-
-      <div class="col-12 col-md-3">
-        <div class="border rounded bg-white py-4 px-3 h-100">
-          <h4 class="text-center">Barbearia</h4>
-          <p class="text-center fw-bold text-primary">Alexandre</p>
-
-          <div class="d-flex align-items-center justify-content-start mb-2">
-            <img class="me-2" src="./assets/img/Icon_whatsapp-2.png" width="32" height="32" alt="">
-            <a class="mb-0" href="https://wa.me/554991233865?text=Ol%C3%A1%20Alexandre%2C%20gostaria%20de%20saber%20mais%20informa%C3%A7%C3%B5es%20sobre%20a%20barbearia%21" target="_blank">49 9 9123-3865</a>
-          </div>
-          <div class="d-flex align-items-center justify-content-start mb-2">
-            <img class="me-2" src="./assets/img/Icon_instagram.png" width="32" height="32" alt="">
-            <a class="mb-0" href="https://www.instagram.com/trust.barbearia/" target="_blank">@trust.barbearia</a>
-          </div>
-          <div class="d-flex align-items-center justify-content-start">
-            <img class="me-2" src="./assets/img/Icon_appbarber.png" width="32" height="32" alt="">
-            <a class="mb-0" href="https://sites.appbarber.com.br/trustbarbearia-cn71" target="_blank">App Barber</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+{% include esmalteria-contatos.html %}

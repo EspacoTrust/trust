@@ -29,8 +29,8 @@ p, small, li, a, span, label, input, button{
     color: #4E4D4D !important;
 }
 
-nav{
-    background-color: #000000B3;
+.navbar{
+  background-color: rgba(0, 0, 0, .75);
 }
 
 .nav-link{
@@ -43,8 +43,30 @@ nav{
 
 .banner{
     padding: 0.5rem 1.5rem !important;
-    background-image: url(./../img/Banner.png);
+    background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+        url("./../video/banner.mp4");
+    background-color: rgba(0, 0, 0, 0.7);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     height: 100vh;
+}
+
+.banner::before {
+ content: "";
+ position: absolute;
+ inset: 0;
+ background: linear-gradient(
+   to bottom,
+   rgba(0,0,0,.45),
+   rgba(0,0,0,.25),
+   rgba(0,0,0,.55)
+ );
+}
+
+.banner img {
+ filter: drop-shadow(0 10px 30px rgba(0,0,0,.5));
 }
 
 .blur{
@@ -60,10 +82,6 @@ nav{
     padding: 0.7rem 1rem !important;
 }
 
-.text-primary{
-    color: #FFB400 !important;
-}
-
 .w-md-75{
     width: 75% !important;
 }
@@ -77,6 +95,23 @@ nav{
 /* barbearia */
 .barbearia{
     background-color: #292929;
+}
+
+.barbearia-index {
+    position: relative;
+    background: white;
+}
+
+.barbearia-index::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: #292929;
+    opacity: var(--fade, 0);
+}
+
+.barbearia-index * {
+    position: relative;
 }
 
 .barbearia h2,
@@ -111,7 +146,10 @@ nav{
     background-repeat: no-repeat;
 }
 
-.barbearia .curso{
+.barbearia .curso,
+.barbearia .ensino,
+.barbearia .inscricao,
+.barbearia .servicos-lista{
     background-color: #4E4D4D;
 }
 
@@ -169,6 +207,61 @@ footer p{
     color: #F5DBAE !important;
 }
 
+.barbearia .text-primary,
+.text-primary{
+    color: #FFB400 !important;
+}
+
+/* Barbearia pagina */
+.barbearia .text-secondary,
+.text-secondary{
+    color: #F5DBAE !important;
+}
+
+.card-servico{
+  border-radius: 200px 200px 0 0;
+  padding-top: 152px !important
+}
+
+.card-servico img{
+    top: -30px;
+}
+
+.corte-infantil{
+    background-color: #A39479;
+}
+
+.corte-infantil.find-more {
+    background-position: 0 145% !important;
+}
+
+.bg-esmalteria{
+    background-color: #F9E9CE;
+}
+
+swiper-container::part(pagination) {
+    position: relative;
+    margin-top: 16px;
+    bottom: 0;
+}
+
+swiper-container::part(bullet-active) {
+  background-color: #FFB400;
+}
+
+.corte-infantil-image-block{
+    margin-bottom: -240px;
+}
+
+.curso-image-block{
+    margin-top: -56px; 
+    margin-bottom: -56px;
+}
+
+.about-image-block{
+    margin-bottom: -400px;
+}
+
 /* Responsivo */
 @media (max-width: 1220px){
     .barbearia #galeria,
@@ -177,6 +270,30 @@ footer p{
         margin-bottom: 0;
     }
 
+}
+
+@media (min-width: 640px) {
+    swiper-slide{
+        height: 460px;
+    }
+}
+
+@media (min-width: 768px) {
+    swiper-slide{
+        height: 630px;
+    }
+}
+
+@media (min-width: 1024px) {
+    swiper-slide{
+        height: 550px;
+    }
+}
+
+@media (max-width: 640px) {
+    swiper-slide{
+        height: auto;
+    }
 }
 
 /* Tablet */
@@ -190,7 +307,7 @@ footer p{
 
     .contato{
         background-image: none;
-        background-color: #DCDBDB;
+        /* background-color: #DCDBDB; */
     }
 
     .tecnicas .w-75{
@@ -212,5 +329,30 @@ footer p{
 
     .border{
         border-radius: 0.25rem !important;
+    }
+}
+
+@media screen and (min-width: 778px) {
+    .curso-image {
+        position: absolute;
+        margin-bottom: -400px;
+    }
+
+    .position-md-absolute{
+        position: absolute !important;
+    }
+}
+
+@media screen and (max-width: 778px) {
+    .curso-image img{
+        width: 200px !important;
+        margin-bottom: -210px;
+        margin-top: -30px;
+    }
+
+    .corte-infantil-image-block,
+    .curso-image-block,
+    .esmalteria-image-block{
+        margin: 0;
     }
 }

@@ -1,4 +1,4 @@
-filterSelection("all");
+filterSelection("cut");
 
 function filterSelection(c) {
   console.log('entrou')
