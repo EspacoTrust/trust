@@ -320,7 +320,7 @@ swiper-container::part(bullet-active) {
 
     .contato{
         background-image: none;
-        /* background-color: #DCDBDB; */
+        background-color: #292929;
     }
 
     .tecnicas .w-75{
@@ -366,5 +366,9 @@ swiper-container::part(bullet-active) {
     .curso-image-block,
     .esmalteria-image-block{
         margin: 0;
+    }
+
+    .btn{
+        width: 100%;
     }
 }
