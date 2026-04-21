@@ -11,6 +11,11 @@ h1, h2, h3, h4{
     color: #4E4D4D !important;
 }
 
+h2{
+    font-size: 44px !important;
+    font-weight: 100 !important;
+}
+
 h3{
     font-size: 36px !important;
     font-weight: 100 !important;
@@ -315,6 +320,7 @@ swiper-container::part(bullet-active) {
         display: grid;
         grid-template-columns: 2fr 2fr;
         text-align: center;
+        grid-gap: 8px;
         margin-bottom: 3px;
     }
 
@@ -366,9 +372,5 @@ swiper-container::part(bullet-active) {
     .curso-image-block,
     .esmalteria-image-block{
         margin: 0;
-    }
-
-    .btn{
-        width: 100%;
     }
 }
